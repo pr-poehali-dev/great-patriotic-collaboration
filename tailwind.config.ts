@@ -7,7 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
-			"./1779084484264911011.html"
+		"./1779084484264911011.html"
 	],
 	prefix: "",
 	theme: {
@@ -19,6 +19,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cormorant: ['Cormorant Garamond', 'Georgia', 'serif'],
+				'cormorant-light': ['Cormorant', 'Georgia', 'serif'],
+				oswald: ['Oswald', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -53,6 +58,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				sepia: {
+					50: '#faf5ec',
+					100: '#f5ede0',
+					200: '#e8d8c0',
+					300: '#d4b896',
+					400: '#c4a47a',
+					500: '#a88450',
+					600: '#8b6914',
+					700: '#6b4e10',
+					800: '#5c3d1e',
+					900: '#2a1a0a',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -71,20 +88,12 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				}
 			},
 			animation: {
